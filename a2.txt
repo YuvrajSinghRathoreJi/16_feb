@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() 
+{
+
+    char *weekday[50] = {"monday","tuesday","wednesday","thursday","friday","saturday","sunday"};
+    int daynumber;
+    printf("enter a number to represent as a weekday : ");
+scanf("%d",&daynumber);
+
+if(daynumber>=0 && daynumber<=6){
+    printf("weekday %s\n",weekday[daynumber]);
+}
+else{
+    printf("invalid input");
+}
+    return 0;
+}

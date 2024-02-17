@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main()
+{
+
+    char *monthname[50] = {"jan","feb","march","april","may","june","july","august","sep","oct","nov","dec"};
+    int monthnumber;
+    printf("enter a number to represent a monthname : ");
+scanf("%d",&monthnumber);
+
+if(monthnumber>=0 && monthnumber<=11){
+    printf("monthname %s\n",monthname[monthnumber]);
+}
+else{
+    printf("invalid input");
+}
+    return 0;
+}
